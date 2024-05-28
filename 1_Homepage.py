@@ -99,7 +99,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-st.title("Evaluation of Contextual Serach")
+st.title("Evaluation of Contextual Search")
 
 st.subheader("Upload Document",divider=False)
 
@@ -139,9 +139,9 @@ with col2:
     if st.button('Batch Test Evaluation', key='backend_button2', type="primary", use_container_width=True, help="Click for Batch Test Evaluation"):
         st.switch_page("pages/3_Evaluation with Trulens.py")
         
-# with col3:
-#     if st.button('Evaluate with Custom Metrics', key='backend_button3', type="primary", use_container_width=True, help="Click for Evaluate with Custom Metrics"):
-#         st.switch_page("pages/4_Evaluate with Custom Metrics.py")
+with col3:
+    if st.button('Evaluate with Custom Metrics', key='backend_button3', type="primary", use_container_width=True, help="Click for Evaluate with Custom Metrics"):
+        st.switch_page("pages/4_Evaluate with Custom Metrics.py")
 
 
     
