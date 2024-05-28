@@ -129,7 +129,8 @@ st.write("")
 st.write("")
 st.write("")
 
-col1, col2, col3 = st.columns(3)
+# col1, col2, col3 = st.columns(3)
+col1, col2= st.columns(2)
 
 with col1:
     if st.button('Evaluation Metrics', key='backend_button1', type="primary", use_container_width=True, help="Click for Evaluation Metrics"):
@@ -139,9 +140,9 @@ with col2:
     if st.button('Batch Test Evaluation', key='backend_button2', type="primary", use_container_width=True, help="Click for Batch Test Evaluation"):
         st.switch_page("pages/3_Evaluation with Trulens.py")
         
-with col3:
-    if st.button('Evaluate with Custom Metrics', key='backend_button3', type="primary", use_container_width=True, help="Click for Evaluate with Custom Metrics"):
-        st.switch_page("pages/4_Evaluate with Custom Metrics.py")
+# with col3:
+#     if st.button('Evaluate with Custom Metrics', key='backend_button3', type="primary", use_container_width=True, help="Click for Evaluate with Custom Metrics"):
+#         st.switch_page("pages/4_Evaluate with Custom Metrics.py")
 
 
     
